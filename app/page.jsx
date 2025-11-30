@@ -1,4 +1,3 @@
-// app/page.jsx
 "use client";
 
 import Carousel from "../components/Carousel";
@@ -16,8 +15,6 @@ export default function Home() {
   return (
     <main className="min-h-screen bg-gray-100 p-6">
       <div className="max-w-6xl mx-auto space-y-8">
-
-        {/* HEADER */}
         <header className="flex flex-col md:flex-row md:items-center md:justify-between">
           <h1 className="text-3xl font-bold tracking-tight">
             Alpha — Car Showcase
@@ -28,25 +25,19 @@ export default function Home() {
           </div>
         </header>
 
-        {/* CAROUSEL */}
         <div className="bg-white rounded-2xl shadow p-4">
           <Carousel images={carouselImages} />
         </div>
 
-        {/* BUTTONS */}
         <div className="flex items-center gap-4">
           <View360Modal />
         </div>
 
-        {/* GRID SECTIONS */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-
-          {/* Price Calculator Card */}
           <div className="bg-white p-6 rounded-2xl shadow">
             <PriceCalculator />
           </div>
 
-          {/* Car Overview Card */}
           <div className="bg-white p-6 rounded-2xl shadow">
             <CarOverview
               car={{

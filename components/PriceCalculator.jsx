@@ -1,4 +1,3 @@
-// components/PriceCalculator.jsx
 "use client";
 import { useMemo, useState } from "react";
 

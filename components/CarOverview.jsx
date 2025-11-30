@@ -1,4 +1,3 @@
-// components/CarOverview.jsx
 "use client";
 
 export default function CarOverview({ car = {} }) {

@@ -1,9 +1,7 @@
-// components/View360Modal.jsx
 "use client";
 import { useState } from "react";
 import dynamic from "next/dynamic";
 
-// dynamic import to avoid SSR issues; Car360Viewer is client-only anyway
 const Car360Viewer = dynamic(() => import("./Car360Viewer"), { ssr: false });
 
 export default function View360Modal() {
